@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC"
+    tools:context=".MainActivity3">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="24dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="-75dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/square" />
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload and Analyze"
+            android:textSize="30sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_marginTop="-100dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload your CSV file and generate insights instantly"
+            android:textSize="14sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#ffffffff"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="38dp" />
+
+        <!-- Select File Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSelect"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Select CSV File"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#111827"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:backgroundTint="#FFFFFF"
+            app:strokeColor="#D1D5DB"
+            app:strokeWidth="1dp"
+            app:cornerRadius="10dp"
+            app:elevation="2dp"
+            android:layout_marginBottom="18dp" />
+
+        <!-- Spinner Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="vertical"
+            android:background="#D3D3D3"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="18dp"
+            android:elevation="2dp">
+
+            <Spinner
+                android:id="@+id/spinType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#111827"
+                />
+        </LinearLayout>
+
+        <!-- Upload Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnUpload"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Upload and Analyze"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:backgroundTint="#2563EB"
+            app:cornerRadius="18dp"
+            app:elevation="4dp"
+            android:layout_marginBottom="28dp" />
+
+        <!-- Result Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="18dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Analysis Result"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#111827"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/resultText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Waiting for upload..."
+                android:textSize="15sp"
+                android:textColor="#6B7280" />
+        </LinearLayout>
+
+        <!-- Image Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="18dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Visualization"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#111827"
+                android:layout_marginBottom="10dp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="fitCenter"
+                android:src="@android:color/transparent" />
+        </LinearLayout>
+
+        <!-- Summary Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="18dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Summary"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#111827"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/sumText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No summary available."
+                android:textSize="15sp"
+                android:textColor="#6B7280" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

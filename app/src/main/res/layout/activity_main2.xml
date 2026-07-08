@@ -1,0 +1,120 @@
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="30dp"
+    android:paddingBottom="24dp"
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC"
+    tools:context=".MainActivity2">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="-75dp"
+        android:background="@drawable/square" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Predict and Load"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="-100dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload a number, choose a graph type and generate corresponding graphs"
+        android:textSize="14sp"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="28dp" />
+
+    <EditText
+        android:id="@+id/inputValue"
+        android:hint="Enter number"
+        android:layout_width="match_parent"
+        android:textSize="15sp"
+        android:inputType="number"
+        android:layout_marginLeft="25dp"
+        android:textColor="#111827"
+        android:layout_marginRight="25dp"
+        android:layout_height="55dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnPredict"
+        android:text="Predict"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#2563EB"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="10dp"
+        app:elevation="4dp" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:text="Result"
+        android:layout_width="match_parent"
+        android:textSize="15sp"
+        android:textColor="#111827"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="18dp"
+        android:elevation="2dp">
+
+        <Spinner
+            android:id="@+id/spinnerType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/btnPlot"
+        android:text="Load Plot"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#2563EB"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="10dp"
+        app:elevation="4dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_marginTop="-50dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+</LinearLayout>

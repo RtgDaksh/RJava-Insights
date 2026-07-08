@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:gravity="center"
+    android:background="#F8FAFC"
+    tools:context=".MainActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="-150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/square" />
+    <!-- App Logo / Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RJava Insights"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:letterSpacing="0.03"
+        android:layout_marginTop="-120dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Smart Predictions - Data Analysis"
+        android:textSize="14sp"
+        android:textColor="#fff"
+        android:layout_marginBottom="48dp" />
+
+    <!-- Predict Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Predict and Plot"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#2563EB"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="18dp"
+        app:elevation="4dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn3"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Create CSV"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#111827"
+        android:strokeColor="#2563EB"
+        android:layout_marginBottom="20dp"
+        app:strokeWidth="2dp"
+        app:cornerRadius="18dp"
+        app:elevation="2dp" />
+
+    <!-- Upload Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Upload and Analyze"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#111827"
+        android:strokeColor="#2563EB"
+        android:layout_marginBottom="20dp"
+        app:strokeWidth="2dp"
+        app:cornerRadius="18dp"
+        app:elevation="2dp" />
+
+
+
+</LinearLayout>

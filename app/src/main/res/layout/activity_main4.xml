@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingRight="24dp"
+    android:paddingLeft="24dp"
+    android:background="#F8FAFC"
+    tools:context=".MainActivity4">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="-75dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/square" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create and Save"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="-100dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Create a new, personal CSV file and add data points according to your requirements"
+        android:textSize="14sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="28dp" />
+    <EditText
+        android:id="@+id/fileNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter CSV File Name"
+        android:inputType="text"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#111827"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="150dp">
+
+        <EditText
+            android:id="@+id/xInput"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:hint="Enter X Value"
+            android:textColor="#111827"
+            android:textSize="20dp"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/yInput"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:hint="Enter Y Value"
+            android:textColor="#111827"
+            android:inputType="numberDecimal"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addButton"
+        android:text="Add Row"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#111827"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:backgroundTint="#FFFFFF"
+        app:strokeColor="#D1D5DB"
+        app:strokeWidth="2dp"
+        app:cornerRadius="10dp"
+        app:elevation="2dp"
+        android:layout_marginBottom="18dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/saveButton"
+        android:text="Save CSV File"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#111827"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:backgroundTint="#FFFFFF"
+        app:strokeColor="#D1D5DB"
+        app:strokeWidth="2dp"
+        app:cornerRadius="10dp"
+        app:elevation="2dp"
+        android:layout_marginBottom="18dp" />
+
+</LinearLayout>
